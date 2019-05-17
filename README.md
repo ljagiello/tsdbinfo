@@ -1,6 +1,6 @@
 # tsdbinfo - Understand the series and labels you store in Prometheus
 
-[![Build Status](https://cloud.drone.io/api/badges/laszlocph/tsdbinfo/status.svg)](https://cloud.drone.io/laszlocph/tsdbinfo)
+[![Build Status](https://cloud.drone.io/api/badges/ljagiello/tsdbinfo/status.svg)](https://cloud.drone.io/ljagiello/tsdbinfo)
 
 `tsdbinfo` is a tool that looks into the data folder of Prometheus and gives you a basic understanding of what is stored there.
 
@@ -8,14 +8,14 @@
 
 Linux
 ```
-curl -LO https://github.com/laszlocph/tsdbinfo/releases/download/v0.2.0/tsdbinfo-v0.2.0-linux-amd64
+curl -LO https://github.com/ljagiello/tsdbinfo/releases/download/v0.2.0/tsdbinfo-v0.2.0-linux-amd64
 mv tsdbinfo-v0.2.0-linux-amd64 tsdbinfo
 chmod +x tsdbinfo
 ```
 
 Mac
 ```
-curl -LO https://github.com/laszlocph/tsdbinfo/releases/download/v0.2.0/tsdbinfo-v0.2.0-mac-amd64
+curl -LO https://github.com/ljagiello/tsdbinfo/releases/download/v0.2.0/tsdbinfo-v0.2.0-mac-amd64
 mv tsdbinfo-v0.2.0-mac-amd64 tsdbinfo
 chmod +x tsdbinfo
 ```

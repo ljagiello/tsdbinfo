@@ -49,7 +49,7 @@ fi
 curl -o /dev/null -sH "$AUTH" $GH_REPO || { echo "Error: Invalid repo, token or network issue!";  exit 1; }
 
 # Create release
-curl -sH  "$AUTH" -XPOST --data '{"tag_name": "'$tag'", "name": "'$tag'"}' https://api.github.com/repos/laszlocph/tsdbinfo/releases
+curl -sH  "$AUTH" -XPOST --data '{"tag_name": "'$tag'", "name": "'$tag'"}' https://api.github.com/repos/ljagiello/tsdbinfo/releases
 
 # Read asset tags.
 response=$(curl -sH "$AUTH" $GH_TAGS)

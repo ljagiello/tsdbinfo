@@ -21,7 +21,7 @@ import (
 	"text/tabwriter"
 	"time"
 
-	"github.com/laszlocph/tsdbinfo/pkg/common"
+	"github.com/ljagiello/tsdbinfo/pkg/common"
 	"github.com/spf13/cobra"
 )
 
@@ -51,6 +51,7 @@ Example usage:
 		db, err := common.Open(storagePath, noPromLogs)
 		if err != nil {
 			fmt.Printf("opening storage failed: %s", err)
+			os.Exit(1)
 		}
 
 		w := tabwriter.NewWriter(os.Stdout, 0, 0, 4, ' ', tabwriter.TabIndent)

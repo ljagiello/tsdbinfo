@@ -22,7 +22,7 @@ import (
 	"text/tabwriter"
 
 	"github.com/gosuri/uiprogress"
-	"github.com/laszlocph/tsdbinfo/pkg/common"
+	"github.com/ljagiello/tsdbinfo/pkg/common"
 	promTsdb "github.com/prometheus/tsdb"
 	"github.com/prometheus/tsdb/chunks"
 	promTsdbLabels "github.com/prometheus/tsdb/labels"
@@ -165,7 +165,7 @@ Example usage:
 		}
 
 		if block == nil {
-			fmt.Fprintln(os.Stderr, "error: can't find block with id %s", blockId)
+			fmt.Fprintf(os.Stderr, "error: can't find block with id %s", blockId)
 			os.Exit(2)
 		}
 
