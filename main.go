@@ -14,7 +14,7 @@
 
 package main
 
-import "github.com/laszlocph/tsdbinfo/cmd"
+import "github.com/ljagiello/tsdbinfo/cmd"
 
 func main() {
 	cmd.Execute()
